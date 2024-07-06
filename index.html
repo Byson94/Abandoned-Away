@@ -111,6 +111,46 @@
         .back-to-top a:hover {
             background-color: #c3924a;
         }
+        .game-info {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .game-info img {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+        .game-info p {
+            flex: 1;
+        }
+        .terms-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .terms-info img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .terms-info p {
+            flex: 2;
+        }
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-button a {
+            background-color: #dda15e;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-button a:hover {
+            background-color: #c3924a;
+        }
         @media (max-width: 768px) {
             nav ul {
                 display: flex;
@@ -165,24 +205,22 @@
     <main>
         <div id="home" class="section">
             <h2>Welcome to Cosmic Outpost</h2>
-            <div style="display: flex; align-items: center;">
-                <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Cosmic Outpost" style="max-width: 200px; margin-right: 20px;">
+            <div class="game-info">
+                <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Cosmic Outpost">
                 <p>Cosmic Outpost is a thrilling space survival game developed by Byson94. Explore a distant planet, gather resources, and build your outpost to survive alien attacks during the night. This game utilizes advanced features of GDevelop, offering endless exploration and challenges. Join us on this interstellar adventure!</p>
             </div>
         </div>
         <div class="divider"></div>
         <div id="terms" class="section">
             <h2>Terms and Conditions</h2>
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-                <div style="flex: 1;">
-                    <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Thumbnail.png" alt="Terms and Conditions" style="max-width: 150px;">
-                </div>
-                <div style="flex: 2; margin-left: 20px;">
-                    <p>Welcome to Cosmic Outpost, a game developed by Byson94. These terms and conditions ("Terms") govern your use of the game. By accessing or playing Cosmic Outpost, you agree to comply with and be bound by these Terms. If you do not agree with these Terms, please do not use the game.</p>
-                    <p>Cosmic Outpost is a space survival and exploration game where you must navigate a hostile alien environment, build shelters, and defend against nightly attacks. It features a dynamic day-night cycle and requires strategic resource management to survive.</p>
-                    <p>Please take a moment to review our <a href="https://byson94.github.io/Cosmic-outpost-TermsAndConditions/">Terms and Conditions</a>. It will only take about 1 minute.</p>
-                </div>
+            <div class="terms-info">
+                <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Thumbnail.png" alt="Terms and Conditions">
+                <p>Welcome to Cosmic Outpost, a game developed by Byson94. These terms and conditions ("Terms") govern your use of the game. By accessing or playing Cosmic Outpost, you agree to comply with and be bound by these Terms. If you do not agree with these Terms, please do not use the game.</p>
+                <p>Cosmic Outpost is a space survival and exploration game where you must navigate a hostile alien environment, build shelters, and defend against nightly attacks. It features a dynamic day-night cycle and requires strategic resource management to survive.</p>
             </div>
+        </div>
+        <div class="download-button">
+            <a href="#getthegame">Download Now</a>
         </div>
         <div class="back-to-top">
             <a href="#home">Back to Top</a>
