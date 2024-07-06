@@ -5,16 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Outpost</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
         h1 {
             font-size: 2em;
             color: #ffa500; /* Orange color */
             text-decoration: underline;
         }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         img {
-            width: 300px; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Ensures proper spacing */
+            width: 100%; /* Makes the image responsive */
+            display: block;
             margin: 20px auto; /* Centers the image */
+            max-width: 500px; /* Limits maximum width of the image */
+            height: auto; /* Maintains aspect ratio */
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
         }
     </style>
 </head>
