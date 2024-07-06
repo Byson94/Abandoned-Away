@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Outpost</title>
     <style>
-        /* Reset some default styles */
         * {
             margin: 0;
             padding: 0;
@@ -13,9 +12,11 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            background-image: url('space-background.jpg'); /* Replace with your space-themed background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
         }
 
         .container {
@@ -25,46 +26,50 @@
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for header */
+            padding: 20px 0;
         }
 
-        header .container {
-            display: flex;
-            justify-content: space-between;
+        header .logo {
+            font-size: 2.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         header nav ul {
             list-style-type: none;
             display: flex;
+            justify-content: center;
         }
 
         header nav ul li {
-            margin: 0 10px;
+            margin: 0 15px;
         }
 
         header nav ul li a {
             color: #fff;
             text-decoration: none;
-            padding: 10px;
-            transition: background-color 0.3s ease;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
         }
 
         header nav ul li a:hover {
-            background-color: #555;
+            color: #4CAF50; /* Green hover color */
         }
 
         main {
-            padding: 20px;
-        }
-
-        .section {
             padding: 40px 0;
         }
 
+        .section {
+            text-align: center;
+            padding: 60px 0;
+        }
+
         .section h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
         }
 
@@ -89,16 +94,13 @@
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for footer */
             padding: 20px 0;
             text-align: center;
         }
 
-        footer .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        footer p {
+            margin-bottom: 10px;
         }
 
         footer ul {
@@ -118,7 +120,7 @@
         }
 
         footer ul li a:hover {
-            color: #ddd;
+            color: #4CAF50; /* Green hover color */
         }
     </style>
 </head>
@@ -141,20 +143,20 @@
         <section id="home" class="section">
             <div class="container">
                 <h2>Welcome to Cosmic Outpost</h2>
-                <p>Embark on a space survival adventure where you must build, explore, and survive on an alien planet.</p>
-                <a href="#get-game" class="btn">Get Cosmic Outpost</a>
+                <p>Embark on a thrilling space survival adventure where you must build, explore, and survive on an alien planet.</p>
+                <a href="#get-game" class="btn">Download Now</a>
             </div>
         </section>
         <section id="gameplay" class="section">
             <div class="container">
                 <h2>Gameplay</h2>
-                <p>Survive harsh environments, gather resources, and fend off alien creatures in your quest for exploration and outpost building.</p>
+                <p>Survive harsh environments, gather resources, and defend against alien creatures in your quest for exploration and outpost building.</p>
             </div>
         </section>
         <section id="community" class="section">
             <div class="container">
                 <h2>Community</h2>
-                <p>Join a community of space adventurers, share your creations, and explore endless possibilities.</p>
+                <p>Join a vibrant community of space explorers, share your discoveries, and collaborate on building the ultimate outposts.</p>
             </div>
         </section>
         <section id="get-game" class="section">
