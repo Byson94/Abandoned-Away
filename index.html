@@ -10,74 +10,91 @@
             background-color: #f9f9f9;
             color: #333;
             margin: 0;
-            padding: 0 20px;
+            padding: 20px;
             line-height: 1.6;
         }
-        header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #333;
-            color: #fff;
-        }
-        h1 {
-            font-size: 2em;
-            color: #ffa500; /* Orange color */
-            text-decoration: underline;
-        }
-        main {
+        .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-        .image-section {
+        h1 {
+            color: #ffa500;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .section {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
+            align-items: flex-start;
+            margin-top: 20px;
         }
-        .image-section img {
+        .section img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
             margin-bottom: 10px;
         }
-        .description {
-            flex: 1;
-            text-align: justify;
-            margin-left: 20px;
+        .section-text {
+            flex: 0 0 60%;
+            padding: 0 20px;
         }
-        .terms {
-            text-align: center;
-            margin-bottom: 20px;
+        .section-text p {
+            text-align: justify;
+        }
+        .section-text a {
+            color: #ffa500;
+            text-decoration: underline;
         }
         .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-button a {
             display: inline-block;
             padding: 10px 20px;
             background-color: #ffa500;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
+        }
+        .download-button a:hover {
+            background-color: #c47900;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Cosmic Outpost</h1>
-    </header>
-    <main>
-        <section class="image-section">
-            <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Cosmic Outpost Photo" style="max-width: 300px;">
-            <div class="description">
-                <p>Cosmic Outpost is a thrilling space survival game developed by Byson94. Embark on an epic journey to survive on a distant planet, utilizing the advanced features of GDevelop. Explore an infinite world filled with mysteries and dangers. Prepare yourself for night-time alien attacks, where your survival skills will be put to the test. Craft tools and manage resource capsules to thrive in this challenging environment. Join us in this cosmic adventure and discover what it takes to conquer the unknown!</p>
-                <p>Make sure to read the <a href="https://byson94.github.io/Cosmic-outpost-TermsAndConditions/" target="_blank">Terms and Conditions</a> before diving into the game. It only takes less than 1 minute!</p>
-                <a href="#" class="download-button">Download Now</a>
+
+        <!-- Section 1: Image X and Text -->
+        <div class="section">
+            <div class="section-text">
+                <p>Cosmic Outpost is a wonderful game made by Byson94. It’s a space survival game featuring survival on a different planet. The game utilizes the advanced features of GDevelop, providing a thrilling experience filled with exploration and survival challenges. Encounter alien attacks during the night and prepare yourself with resource capsules and courage. Join us on this space adventure!</p>
             </div>
-            <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Thumbnail.png" alt="Cosmic Outpost Thumbnail" style="max-width: 300px;">
-        </section>
-    </main>
+            <div class="section-image">
+                <img src="https://github.com/Byson94/Cosmic-outpost/raw/main/Photo.png" alt="Photo.png">
+            </div>
+        </div>
+
+        <!-- Section 2: Image Y and Additional Text -->
+        <div class="section">
+            <div class="section-text">
+                <p>Explore the infinite world of Cosmic Outpost with its captivating visuals and immersive gameplay. Ensure to read the <a href="https://byson94.github.io/Cosmic-outpost-TermsAndConditions/">Terms and Conditions</a> before starting your adventure. It will only take less than 1 minute!</p>
+            </div>
+            <div class="section-image">
+                <img src="https://github.com/Byson94/Cosmic-outpost/raw/main/Thumbnail.png" alt="Thumbnail.png">
+            </div>
+        </div>
+
+        <!-- Download Button -->
+        <div class="download-button">
+            <a href="https://example.com/download">Download Now</a>
+        </div>
+    </div>
 </body>
 </html>
