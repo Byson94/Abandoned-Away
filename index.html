@@ -31,25 +31,28 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: row; /* Align items horizontally */
         }
-        img {
-            width: 100%; /* Makes the image responsive */
-            max-width: 400px; /* Limits maximum width of the image */
-            height: auto; /* Maintains aspect ratio */
-            display: block;
-            margin-right: 20px; /* Space between image and text */
-            border-radius: 8px; /* Rounded corners */
+        .image-section {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
         .description {
-            flex: 1; /* Take remaining space */
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.8;
             text-align: justify;
             margin-bottom: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffa500;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -58,11 +61,18 @@
         <h1>Cosmic Outpost</h1>
     </header>
     <main>
-        <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Cosmic Outpost Photo">
-        <div class="description">
+        <section class="image-section">
+            <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Cosmic Outpost Photo">
+        </section>
+        <section class="image-section">
+            <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Thumbnail.png" alt="Cosmic Outpost Thumbnail">
+        </section>
+        <section class="description">
             <p>Welcome to Cosmic Outpost, a thrilling cosmic survival game where you must utilize advanced technologies to survive on an alien planet. In this expansive universe, you'll embark on an interstellar journey filled with challenges and discoveries. Build your outpost, gather essential resources, and defend against extraterrestrial threats under the vast starlit skies. Craft innovative tools, explore diverse landscapes, and strategize your survival amidst dynamic day-night cycles and unpredictable weather conditions. Are you ready to conquer the cosmos and leave your mark in the annals of space exploration?</p>
-            <p>Join us in this epic adventure and experience the thrill of cosmic survival like never before. Download Cosmic Outpost today and prepare to immerse yourself in an unforgettable interstellar odyssey!</p>
-        </div>
+            <p>Join us in this epic adventure and experience the thrill of cosmic survival like never before. Explore our Terms and Conditions for more details on gameplay rules and user rights.</p>
+            <p><a href="https://byson94.github.io/Cosmic-outpost-TermsAndConditions/" target="_blank">Read Terms and Conditions</a></p>
+            <a href="#" class="download-button">Download Now</a>
+        </section>
     </main>
 </body>
 </html>
