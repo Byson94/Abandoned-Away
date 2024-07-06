@@ -33,16 +33,21 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .image-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
             margin-bottom: 20px;
-            text-align: center;
         }
         .image-section img {
-            max-width: 100%;
+            max-width: 45%;
             border-radius: 8px;
             margin-bottom: 10px;
         }
         .description {
             text-align: justify;
+            margin-bottom: 20px;
+        }
+        .terms {
             margin-bottom: 20px;
         }
         .download-button {
@@ -62,15 +67,17 @@
     </header>
     <main>
         <section class="image-section">
-            <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Cosmic Outpost Photo">
-        </section>
-        <section class="image-section">
-            <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Thumbnail.png" alt="Cosmic Outpost Thumbnail">
+            <div>
+                <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Cosmic Outpost Photo">
+                <p>Welcome to Cosmic Outpost, a thrilling cosmic survival game where you must utilize advanced technologies to survive on an alien planet. In this expansive universe, you'll embark on an interstellar journey filled with challenges and discoveries. Build your outpost, gather essential resources, and defend against extraterrestrial threats under the vast starlit skies. Craft innovative tools, explore diverse landscapes, and strategize your survival amidst dynamic day-night cycles and unpredictable weather conditions. Are you ready to conquer the cosmos and leave your mark in the annals of space exploration?</p>
+                <p>Join us in this epic adventure and experience the thrill of cosmic survival like never before.</p>
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Thumbnail.png" alt="Cosmic Outpost Thumbnail">
+            </div>
         </section>
         <section class="description">
-            <p>Welcome to Cosmic Outpost, a thrilling cosmic survival game where you must utilize advanced technologies to survive on an alien planet. In this expansive universe, you'll embark on an interstellar journey filled with challenges and discoveries. Build your outpost, gather essential resources, and defend against extraterrestrial threats under the vast starlit skies. Craft innovative tools, explore diverse landscapes, and strategize your survival amidst dynamic day-night cycles and unpredictable weather conditions. Are you ready to conquer the cosmos and leave your mark in the annals of space exploration?</p>
-            <p>Join us in this epic adventure and experience the thrill of cosmic survival like never before. Explore our Terms and Conditions for more details on gameplay rules and user rights.</p>
-            <p><a href="https://byson94.github.io/Cosmic-outpost-TermsAndConditions/" target="_blank">Read Terms and Conditions</a></p>
+            <p>Explore our <a href="https://byson94.github.io/Cosmic-outpost-TermsAndConditions/" target="_blank">Terms and Conditions</a> for more details on gameplay rules and user rights. It only takes about 1 minute.</p>
             <a href="#" class="download-button">Download Now</a>
         </section>
     </main>
