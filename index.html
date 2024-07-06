@@ -5,83 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Outpost</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.6;
         }
-        .container {
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
             max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
+            margin: 20px auto;
             padding: 20px;
+            background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .section {
             margin-bottom: 20px;
         }
-        .section img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .text {
+        .section h2 {
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #dda15e;
+            padding-bottom: 5px;
             text-align: center;
+            margin-top: 0;
+        }
+        .section p, .section ul {
+            margin: 10px 0;
+            text-align: justify;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
             margin-top: 20px;
         }
-        .button {
+        .footer-links a {
+            color: #dda15e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        .back-to-top {
             display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px 20px;
+            margin: 20px 0;
             text-align: center;
-            background-color: #ff6600;
+        }
+        .back-to-top a {
+            background-color: #dda15e;
             color: #fff;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+        }
+        .back-to-top a:hover {
+            background-color: #c3924a;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                display: block;
+                width: 100%;
+            }
+            nav a {
+                padding: 10px;
+                border-top: 1px solid #555;
+                border-bottom: 1px solid #333;
+            }
+            .section h2 {
+                font-size: 1.25em;
+            }
+            .section p, .section ul {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 0 10px;
+            }
+            main {
+                padding: 15px;
+            }
+            .section h2 {
+                font-size: 1.1em;
+            }
+            .section p, .section ul {
+                font-size: 0.85em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 style="text-align: center; text-decoration: underline; color: #ff6600;">Cosmic Outpost</h1>
-
-        <!-- Section 1: Pic X and Text -->
-        <div class="section">
-            <div style="float: left; width: 50%;"><img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Pic X"></div>
-            <div style="float: right; width: 50%; text-align: center;">
-                <p>
-                    Cosmic Outpost is a wonderful game made by Byson94. It’s a space survival game featured with survival on a different planet. The game utilizes the advanced features of GDevelop, offering exploration and challenging alien encounters during the night. Prepare with your resource capsules and become the ultimate survivor in this cosmic adventure!
-                </p>
+    <header>
+        <h1>Cosmic Outpost</h1>
+        <p>Developed by Byson94</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#terms">Terms and Conditions</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#getthegame">Get the Game</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="home" class="section">
+            <h2>Welcome to Cosmic Outpost</h2>
+            <div style="display: flex; align-items: center;">
+                <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Photo.png" alt="Cosmic Outpost" style="max-width: 200px; margin-right: 20px;">
+                <p>Cosmic Outpost is a thrilling space survival game developed by Byson94. Explore a distant planet, gather resources, and build your outpost to survive alien attacks during the night. This game utilizes advanced features of GDevelop, offering endless exploration and challenges. Join us on this interstellar adventure!</p>
             </div>
-            <div style="clear: both;"></div>
         </div>
-
-        <!-- Section 2: Pic Y -->
-        <div class="section">
-            <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Thumbnail.png" alt="Pic Y" style="display: block; margin: 0 auto;">
+        <div class="divider"></div>
+        <div id="terms" class="section">
+            <h2>Terms and Conditions</h2>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="flex: 1;">
+                    <img src="https://raw.githubusercontent.com/Byson94/Cosmic-outpost/main/Thumbnail.png" alt="Terms and Conditions" style="max-width: 150px;">
+                </div>
+                <div style="flex: 2; margin-left: 20px;">
+                    <p>Welcome to Cosmic Outpost, a game developed by Byson94. These terms and conditions ("Terms") govern your use of the game. By accessing or playing Cosmic Outpost, you agree to comply with and be bound by these Terms. If you do not agree with these Terms, please do not use the game.</p>
+                    <p>Cosmic Outpost is a space survival and exploration game where you must navigate a hostile alien environment, build shelters, and defend against nightly attacks. It features a dynamic day-night cycle and requires strategic resource management to survive.</p>
+                    <p>Please take a moment to review our <a href="https://byson94.github.io/Cosmic-outpost-TermsAndConditions/">Terms and Conditions</a>. It will only take about 1 minute.</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Section 3: Additional Text -->
-        <div class="section text">
-            <p>
-                Explore an infinite world, survive alien attacks, and build your outpost. Dive into the adventure now!
-            </p>
+        <div class="back-to-top">
+            <a href="#home">Back to Top</a>
         </div>
-
-        <!-- Terms and Conditions Link -->
-        <div class="section">
-            <p style="text-align: center;">
-                <a href="https://byson94.github.io/Cosmic-outpost-TermsAndConditions/">Please read our Terms and Conditions</a>
-            </p>
+    </main>
+    <footer>
+        <p>Cosmic Outpost &copy; 2024 Byson94</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#terms">Terms and Conditions</a>
+            <a href="#contact">Contact</a>
+            <a href="#getthegame">Get the Game</a>
         </div>
-
-        <!-- Download Button -->
-        <div class="section">
-            <a href="#" class="button">Download Now</a>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
