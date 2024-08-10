@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abandoned Away official</title>
+    <title>Abandoned Away Official</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Byson94/Abandoned-Away-TermsAndConditions/main/Icon.png" type="image/png">
     <style>
 
@@ -13,6 +13,10 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
             max-width: 800px;
@@ -21,6 +25,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
         .section {
             margin-bottom: 20px;
@@ -32,7 +37,6 @@
             margin: 0 auto;
         }
         .text {
-            text-align: center;
             margin-top: 20px;
         }
         .button {
@@ -54,27 +58,28 @@
         h3 {
             color: #000;
             font-size: 20px;
-            text-align: center;
         }
         h4 {
             color: #ff6600;
-            text-align: center;
             text-decoration: underline;
             font-weight: bold;
             font-size: 30px;
         }
         p{
-            text-align: center;
+            margin-bottom: 20px;
         }
         ul{
-            text-align: center;
+            list-style-position: inside;
+            padding-left: 0;
         }
         li{
+            margin-bottom: 5px;
             text-align: center;
         }
     </style>
 </head>
 <body>
+    <div class="container">
         <!-- Updates and Patches Section -->
         <div class="section">
             <h4>Remarkable Updates and Patches</h4>
@@ -99,14 +104,14 @@
                 <li>Redesigned crafting UI.</li>
             </ul>
             <h3>18/7/2024 - Version 0.2.0</h3>
-            <p>This update didnt bring many features but it decreased the development time to finish the game</p>
+            <p>This update didn't bring many features but it decreased the development time to finish the game</p>
             <ul>
                 <li>New UI when saving the game.</li>
                 <li>Many more craftable items.</li>
                 <li>Now usable swords.</li>
                 <li>Sword attack animation.</li>
                 <li>New animations.</li>
-                <li>Can now seletct inventories with numbers.</li>
+                <li>Can now select inventories with numbers.</li>
                 <li>Better alien damage animation.</li>
             </ul>
             <h3>06/8/2024 - Version 0.4.0</h3>
@@ -121,5 +126,6 @@
                 <li>Aliens not dealing damage.</li>
             </ul>
         </div>
+    </div>
 </body>
 </html>
