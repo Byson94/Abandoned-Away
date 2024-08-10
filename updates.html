@@ -6,17 +6,16 @@
     <title>Abandoned Away Official</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Byson94/Abandoned-Away-TermsAndConditions/main/Icon.png" type="image/png">
     <style>
-
-        /* CSS time yeahhh */
-        
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             padding: 20px;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            flex-direction: column;
         }
         .container {
             max-width: 800px;
@@ -26,6 +25,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
+            overflow-y: auto;
         }
         .section {
             margin-bottom: 20px;
@@ -78,6 +78,38 @@
         li {
             margin-bottom: 5px;
         }
+        /* Make the Go back button fixed at the bottom */
+        .go-back {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: orange;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: underline;
+            text-align: center;
+            z-index: 1000;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        /* Mobile friendly adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h4 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            .go-back {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -129,7 +161,6 @@
             </ul>
         </div>
     </div>
-    <a href="https://byson94.github.io/Abandoned-Away/" style="text-decoration: underline; background-color: orange; padding: 10px; border-radius: 5px; color: white; display: inline-block; text-align: center;">Go back</a>
+    <a href="https://byson94.github.io/Abandoned-Away/" class="go-back">Go back</a>
 </body>
 </html>
-
