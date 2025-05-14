@@ -1,2 +1,2 @@
-# Abandoned Away Official site
+# Abandoned Away
 https://byson94.github.io/Abandoned-Away/
